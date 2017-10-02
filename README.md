@@ -7,4 +7,6 @@ Hi there private citizens (no robots please).
  Simply follow the instructions here: https://jenkins.io/doc/book/blueocean/getting-started/
  Once everything is set up, and you've got a nice Jenkins file in your repo, it may look like this:
  
-![alt text](./icon48.png "Logo Title Text 1")
+![image](hello-world/Jenkins BlueOcean pipeline example.PNG  "Jenkins BlueOcean pipeline example")
+
+Having fun yet?

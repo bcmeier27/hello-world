@@ -3,7 +3,16 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        echo 'First stage'
+        parallel(
+          "stage1": {
+            echo 'First stage'
+            
+          },
+          "test": {
+            junit 'build/reports/**/*.xml'
+            
+          }
+        )
       }
     }
     stage('stage2') {

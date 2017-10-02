@@ -8,7 +8,21 @@ pipeline {
     }
     stage('stage2') {
       steps {
-        mail(subject: 'stage1 complete', body: 'Stage 1 of the Jenkins BlueOcean hello-world pipeline is complete.', from: 'berniemeier@gmail.com', to: 'berniemeier@gmail.com')
+        parallel(
+          "stage2": {
+            build 'test1'
+            
+          },
+          "stage2b": {
+            echo 'building test'
+            
+          }
+        )
+      }
+    }
+    stage('') {
+      steps {
+        echo 'Finished!'
       }
     }
   }

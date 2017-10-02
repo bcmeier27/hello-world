@@ -6,7 +6,7 @@ pipeline {
         echo 'First stage'
       }
     }
-    stage('') {
+    stage('stage2') {
       steps {
         mail(subject: 'stage1 complete', body: 'Stage 1 of the Jenkins BlueOcean hello-world pipeline is complete.', from: 'berniemeier@gmail.com', to: 'berniemeier@gmail.com')
       }

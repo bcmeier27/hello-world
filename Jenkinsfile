@@ -20,7 +20,7 @@ pipeline {
         )
       }
     }
-    stage('') {
+    stage('Finished') {
       steps {
         echo 'Finished!'
       }

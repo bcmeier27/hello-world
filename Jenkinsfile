@@ -10,7 +10,7 @@ pipeline {
       steps {
         parallel(
           "stage2": {
-            build 'test1'
+            sh 'echo Today\\\'s date is `date`'
             
           },
           "stage2b": {
